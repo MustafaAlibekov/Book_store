@@ -1,0 +1,31 @@
+﻿@using DudarShop.ViewModels
+@model BookListViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <div>
+
+        <h2>Книги</h2>
+        <h3>@Model.currCategory</h3>
+        @{
+            foreach (var book in Model.AllBooks)
+            {
+                <div>
+                    <h2>Книга: @book.name</h2>
+                    <p>Цена: @book.price.ToString("c")</p>
+                    <p>Категория: @book.Category.categoryName</p>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>
