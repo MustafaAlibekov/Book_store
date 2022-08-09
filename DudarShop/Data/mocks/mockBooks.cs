@@ -16,8 +16,8 @@ namespace DudarShop.Data.mocks
             {
                 return new List<Book>
                 {
-                    new Book { name = "Стив Лайонос - Криг", shortDesc = "", longDesc = "", img = "", price = 480, isFavourite = true, available = true, Category = _categoryBooks.AllCAtegories.Last() },
-                    new Book { name = "Роман с Data Science. Как монетизировать большие данные", shortDesc = "", longDesc = "", img = "", price = 480, isFavourite = true, available = true, Category = _categoryBooks.AllCAtegories.ElementAt(1) }
+                    new Book { name = "Стив Лайонос - Криг", shortDesc = "", longDesc = "", img = "~/img/krieg.jpg", price = 480, isFavourite = true, available = true, Category = _categoryBooks.AllCAtegories.Last() },
+                    new Book { name = "Роман с Data Science. Как монетизировать большие данные", shortDesc = "", longDesc = "", img = "~/img/C#.jpg", price = 480, isFavourite = true, available = true, Category = _categoryBooks.AllCAtegories.ElementAt(1) }
                 };
             }
         }
